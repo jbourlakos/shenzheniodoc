@@ -1,8 +1,6 @@
-# Instructions & Registers
+# Instructions
 
-## Instructions
-
-### Basic
+## Basic
 
 ```
 nop                     ; Do nothing
@@ -16,7 +14,7 @@ slp     R/I             ; Sleep for #1
 slx     P               ; Sleep until value in P
 ```
 
-### Arithmetic
+## Arithmetic
 
 ```
 add     R/I             ; Add #1 in acc
@@ -27,7 +25,7 @@ dgt     R/I             ;
 dst     R/I     R/I     ;
 ```
 
-### Test Instructions
+## Test Instructions
 
 ```
 teq     R/I     R/I     ; Set acc to ??? if #1 equals #2
