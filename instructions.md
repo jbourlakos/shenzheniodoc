@@ -3,15 +3,15 @@
 ## Basic
 
 ```
-nop                     ; Do nothing
+nop                     # Do nothing
 
-mov     R/I     R       ; Assign #1 to #2
+mov     R/I     R       # Copy value of #1 to #2
 
-jmp     L               ; Go to label L
+jmp     L               # Go to label L
 
-slp     R/I             ; Sleep for #1 time units
+slp     R/I             # Sleep for #1 time units
 
-slx     P               ; Sleep until value in P
+slx     X               # Sleep until data are read from X pin
 ```
 
 ## Arithmetic
@@ -23,21 +23,21 @@ sub     R/I             ; Subtruct #1 from acc
 
 mul     R/I             ; Multiply acc by #1
 
-not                     ; Invert acc
+not                     ; If acc == 0 acc = 100 else acc = 0
 
-dgt     R/I             ;
+dgt     R/I             ; Read the #1-th digit of acc to acc
 
-dst     R/I     R/I     ;
+dst     R/I     R/I     ; Change the #1-th digit of acc to value of #2
 ```
 
 ## Test Instructions
 
 ```
-teq     R/I     R/I     ; Set acc to ??? if #1 equals #2
+teq     R/I     R/I     ; If #1 == #2, Enable + instruction else enable - instruction
 
-tgt     R/I     R/I     ; Set acc to ??? if #1 is greater than #2
+tgt     R/I     R/I     ; If #1 > #2, Enable + instruction else enable - instruction
 
-tlt     R/I     R/I     ; Set acc to ??? if #1 is less than #2
+tlt     R/I     R/I     ; If #1 < #2, Enable + instruction else enable - instruction
 
-tcp     R/I     R/I     ;
+tcp     R/I     R/I     ; If #1 > #2, Enable + instruction, if #1 < #2 enable - instruction
 ```
