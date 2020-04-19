@@ -15,3 +15,13 @@ L   ; Label (see instruction jmp)
 
 X   ; XBus register (x0, x1, ...)
 ```
+
+## MCxxxx registers
+
+```
+acc   ; accumulator, general-purpose register, affected by arithmetic
+dat   ; general-purpose register
+p0-p1 ; Simple I/O registers
+x0-x3 ; XBus I/O registers
+null  ; pseudo-register, reading value is zero, writing does nothing
+```
